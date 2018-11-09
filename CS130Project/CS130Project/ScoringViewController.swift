@@ -1,39 +1,40 @@
 //
-//  ScoringViewController.swift
-//  CS130Project
+//  ViewController.swift
+//  scoring
 //
-//  Created by user146389 on 11/5/18.
+//  Created by user146389 on 11/8/18.
 //  Copyright © 2018 user146389. All rights reserved.
 //
 
 import UIKit
 
-class ScoringViewController: UIViewController {
+class ScoringViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var name = ["End 1", "End 2", "End 3", "End 4"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    
+    }
 
-        // Do any additional setup after loading the view.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return name.count
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated:false)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "endCell") as! endCellTableViewCell
         
+        cell.endName.text! = name[indexPath.row]
+        
+        return cell
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated:false)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let DvC = storyboard?.instantiateViewController(withIdentifier: "DetailedEnd") as! DetailedEndViewController
+        
+        DvC.getname = name[indexPath.row]
+        self.navigationController?.pushViewController(DvC, animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
