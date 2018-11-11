@@ -9,6 +9,8 @@
 import UIKit
 
 class ENDSViewController: UIViewController {
+    
+    var tenPressed = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +26,28 @@ class ENDSViewController: UIViewController {
 
     @IBOutlet weak var numberLabel: UILabel!
     
-    @IBAction func CButtonTapped(_ sender: UIButton) {
+    @IBAction func ClrButtonTapped(_ sender: UIButton) {
         numberLabel.text = ""
     }
     
+    @IBAction func DelButtonTapped(_ sender: Any) {
+        let curLabel = String(numberLabel.text!)
+        if curLabel[curLabel.index(before: curLabel.endIndex)] != "0"
+        {
+        let index = curLabel.index(curLabel.startIndex, offsetBy: curLabel.count - 3)
+        let newLabel = curLabel[..<index]
+        numberLabel.text = String(newLabel)
+        }
+        else {
+            let index = curLabel.index(curLabel.startIndex, offsetBy: curLabel.count - 4)
+            let newLabel = curLabel[..<index]
+            numberLabel.text = String(newLabel)
+        }
+    }
+    
+    
     @IBAction func numberTapped(_ sender: UIButton) {
-        numberLabel.text = numberLabel.text! + String(sender.tag)
+        numberLabel.text = numberLabel.text! + "  " + (sender.titleLabel?.text!)!
     }
     /*
     // MARK: - Navigation
