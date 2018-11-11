@@ -84,7 +84,7 @@ class startViewController: UIViewController {
             return
         }
         
-        targetSizeButton.setTitle(String(describing: size), for: .normal)
+        targetSizeButton.setTitle(size.rawValue, for: .normal)
         
         sizeButtons.forEach{ (button) in
             UIView.animate(withDuration: 0.3, animations: {
@@ -117,7 +117,7 @@ class startViewController: UIViewController {
             return
         }
         
-        distanceButtonSelect.setTitle(String(describing: distance), for: .normal)
+        distanceButtonSelect.setTitle(distance.rawValue, for: .normal)
         
         distanceButtons.forEach{(button) in
             UIView.animate(withDuration: 0.3, animations: {
@@ -132,7 +132,7 @@ class startViewController: UIViewController {
             return
         }
         
-        selectButton.setTitle(String(describing: bow), for: .normal)
+        selectButton.setTitle(bow.rawValue, for: .normal)
         
         bowButtons.forEach{(button) in
             UIView.animate(withDuration: 0.3, animations: {
@@ -171,7 +171,7 @@ class startViewController: UIViewController {
             return
         }
         
-        arrowButtonSelect.setTitle(String(describing: arrow), for: .normal)
+        arrowButtonSelect.setTitle(arrow.rawValue, for: .normal)
         
         arrowButtons.forEach{(button) in
             UIView.animate(withDuration: 0.3, animations: {
