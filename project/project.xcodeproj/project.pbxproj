@@ -17,6 +17,7 @@
 		ADAE2E8D2195927100615F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */; };
 		ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E8E2195F23B00615F42 /* startViewController.swift */; };
 		ADAE2E9121961AB600615F42 /* scoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E9021961AB600615F42 /* scoreViewController.swift */; };
+		B6A8F5B5219B7B8100A34373 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8F5B4219B7B8100A34373 /* Member.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		ADAE2E9021961AB600615F42 /* scoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreViewController.swift; sourceTree = "<group>"; };
 		B4B8DF3F66DA977EA4AEF127 /* Pods-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project/Pods-project.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A623C211348BA6B6D70C99 /* Pods_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A8F5B4219B7B8100A34373 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				ADAE2E7A21958FF300615F42 /* AppDelegate.swift */,
 				ADAE2E7C21958FF300615F42 /* ViewController.swift */,
+				B6A8F5B4219B7B8100A34373 /* Member.swift */,
 				ADAE2E8E2195F23B00615F42 /* startViewController.swift */,
 				ADAE2E9021961AB600615F42 /* scoreViewController.swift */,
 				AD550AC12198B87900CEA4C2 /* ENDSViewController.swift */,
@@ -176,18 +179,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-project/Pods-project-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD550AC22198B87900CEA4C2 /* ENDSViewController.swift in Sources */,
+				B6A8F5B5219B7B8100A34373 /* Member.swift in Sources */,
 				ADAE2E7D21958FF300615F42 /* ViewController.swift in Sources */,
 				ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */,
 				ADAE2E7B21958FF300615F42 /* AppDelegate.swift in Sources */,
