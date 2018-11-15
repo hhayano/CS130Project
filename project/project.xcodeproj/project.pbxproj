@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E9B3D65FECD51307F56DCE3 /* Pods_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A623C211348BA6B6D70C99 /* Pods_project.framework */; };
 		AD550AC22198B87900CEA4C2 /* ENDSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD550AC12198B87900CEA4C2 /* ENDSViewController.swift */; };
+		AD6ECACA219CF96B00733B5D /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6ECAC9219CF96B00733B5D /* ScoreTableViewController.swift */; };
+		AD6ECACC219CFA7E00733B5D /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6ECACB219CFA7E00733B5D /* customCell.swift */; };
 		ADAE2E7B21958FF300615F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E7A21958FF300615F42 /* AppDelegate.swift */; };
 		ADAE2E7D21958FF300615F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E7C21958FF300615F42 /* ViewController.swift */; };
 		ADAE2E8021958FF300615F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E7E21958FF300615F42 /* Main.storyboard */; };
@@ -16,13 +18,14 @@
 		ADAE2E8521958FF300615F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E8321958FF300615F42 /* LaunchScreen.storyboard */; };
 		ADAE2E8D2195927100615F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */; };
 		ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E8E2195F23B00615F42 /* startViewController.swift */; };
-		ADAE2E9121961AB600615F42 /* scoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E9021961AB600615F42 /* scoreViewController.swift */; };
-		B6A8F5B5219B7B8100A34373 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8F5B4219B7B8100A34373 /* Member.swift */; };
+		ADB97073219CF26600362AFD /* ScoringMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB97072219CF26600362AFD /* ScoringMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E10CD870373295A682A45C6 /* Pods-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project.release.xcconfig"; path = "Pods/Target Support Files/Pods-project/Pods-project.release.xcconfig"; sourceTree = "<group>"; };
 		AD550AC12198B87900CEA4C2 /* ENDSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENDSViewController.swift; sourceTree = "<group>"; };
+		AD6ECAC9219CF96B00733B5D /* ScoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTableViewController.swift; sourceTree = "<group>"; };
+		AD6ECACB219CFA7E00733B5D /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		ADAE2E7721958FF300615F42 /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAE2E7A21958FF300615F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADAE2E7C21958FF300615F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,10 +35,9 @@
 		ADAE2E8621958FF300615F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADAE2E8E2195F23B00615F42 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
-		ADAE2E9021961AB600615F42 /* scoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreViewController.swift; sourceTree = "<group>"; };
+		ADB97072219CF26600362AFD /* ScoringMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringMainViewController.swift; sourceTree = "<group>"; };
 		B4B8DF3F66DA977EA4AEF127 /* Pods-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project/Pods-project.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A623C211348BA6B6D70C99 /* Pods_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6A8F5B4219B7B8100A34373 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +84,12 @@
 			children = (
 				ADAE2E7A21958FF300615F42 /* AppDelegate.swift */,
 				ADAE2E7C21958FF300615F42 /* ViewController.swift */,
-				B6A8F5B4219B7B8100A34373 /* Member.swift */,
 				ADAE2E8E2195F23B00615F42 /* startViewController.swift */,
-				ADAE2E9021961AB600615F42 /* scoreViewController.swift */,
 				AD550AC12198B87900CEA4C2 /* ENDSViewController.swift */,
+				AD6ECAC9219CF96B00733B5D /* ScoreTableViewController.swift */,
 				ADAE2E7E21958FF300615F42 /* Main.storyboard */,
+				AD6ECACB219CFA7E00733B5D /* customCell.swift */,
+				ADB97072219CF26600362AFD /* ScoringMainViewController.swift */,
 				ADAE2E8121958FF300615F42 /* Assets.xcassets */,
 				ADAE2E8321958FF300615F42 /* LaunchScreen.storyboard */,
 				ADAE2E8621958FF300615F42 /* Info.plist */,
@@ -114,7 +117,8 @@
 				ADAE2E7321958FF300615F42 /* Sources */,
 				ADAE2E7421958FF300615F42 /* Frameworks */,
 				ADAE2E7521958FF300615F42 /* Resources */,
-				DB230B27126272B9D17D2169 /* [CP] Embed Pods Frameworks */,
+				CB0CC051245045FB5526B550 /* [CP] Embed Pods Frameworks */,
+				4A12146C3C07565F708394B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,22 +178,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DB230B27126272B9D17D2169 /* [CP] Embed Pods Frameworks */ = {
+		4A12146C3C07565F708394B5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-project/Pods-project-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-project/Pods-project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0CC051245045FB5526B550 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -202,16 +214,13 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-project-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -222,11 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD550AC22198B87900CEA4C2 /* ENDSViewController.swift in Sources */,
-				B6A8F5B5219B7B8100A34373 /* Member.swift in Sources */,
 				ADAE2E7D21958FF300615F42 /* ViewController.swift in Sources */,
+				AD6ECACC219CFA7E00733B5D /* customCell.swift in Sources */,
+				AD6ECACA219CF96B00733B5D /* ScoreTableViewController.swift in Sources */,
 				ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */,
+				ADB97073219CF26600362AFD /* ScoringMainViewController.swift in Sources */,
 				ADAE2E7B21958FF300615F42 /* AppDelegate.swift in Sources */,
-				ADAE2E9121961AB600615F42 /* scoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,10 +375,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PKVX868TJY;
 				INFOPLIST_FILE = project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nock.CS130Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,10 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PKVX868TJY;
 				INFOPLIST_FILE = project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nock.CS130Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

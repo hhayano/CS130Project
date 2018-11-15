@@ -25,11 +25,12 @@ class ViewController: UIViewController {
     }
     
     @objc func handleStart() {
-        let start = storyboard?.instantiateViewController(withIdentifier: "startID") as! startViewController
+        let start = storyboard?.instantiateViewController(withIdentifier: "ScoringMainID") as! ScoringMainViewController
         
         navigationController?.pushViewController(start, animated: true)
     }
-
-
+    
+    
+    
 }
 
