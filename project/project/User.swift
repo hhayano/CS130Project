@@ -21,6 +21,7 @@ class User {
         self.weeklyArrowCount = weeklyArrowCount
     }
     
+    
 //    func addData(_ data: Preset) {
 //        self.SavedPresets.append(data)
 //    }

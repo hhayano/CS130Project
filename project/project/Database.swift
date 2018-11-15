@@ -2,11 +2,12 @@
 import Foundation
 import Firebase
 import FirebaseDatabase
-class Database {
+class Database_ {
     // create a reference to firebase
-    var ref: DatabaseReference!
-    let ref = Database.database().reference()
-    func updateUser(user:User) -> Void {
+    
+    static var ref:DatabaseReference! = Database.database().reference()
+    
+    static func updateUser(_ user:User) -> Void {
         let request :[String: Any?] = ["name": user.name,
                        "weeklyArrowCount": user.weeklyArrowCount,
 //            "prevScoringRounds" : user.prevScoringRounds,
@@ -14,24 +15,24 @@ class Database {
 //            "SavedJournalEntries" : user.SavedJournalEntries
         ]
         
-        self.ref.child("users").child(user.uid).setValue(request)
+        ref.child("users").child(String(user.uid)).setValue(request)
         
     }
-    // Look up the database and get the unique User
-    // func getUser() -> User {
-    //   // to do: get all the info of User and return a User object?
-    //   let userID = Auth.auth().currentUser?.uid
-    //   ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-    //   // Get user value
-    //   let value = snapshot.value as? NSDictionary
-    //   let username = value?["username"] as? String ?? ""
-    //   let user = User(username: username)
+     
+     func getUser() -> User {
+       // to do: get all the info of User and return a User object?
+       let userID = Auth.auth().currentUser?.uid
+       ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+       // Get user value
+       let value = snapshot.value as? NSDictionary
+       let username = value?["username"] as? String ?? ""
+       let user = User(username: username)
     
-    //   // ...
-    // }) { (error) in
-    // print(error.localizedDescription)
-    // }
+       // ...
+     }) { (error) in
+     print(error.localizedDescription)
+     }
     
-    // }
+     }
 }
 
