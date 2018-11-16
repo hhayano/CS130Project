@@ -19,12 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
-<<<<<<< HEAD
-=======
-        for i in 1...20{
-            User(i,"hello",i).submitUser()
-        }
->>>>>>> refs/remotes/origin/feature-database
         
 //
         return true
