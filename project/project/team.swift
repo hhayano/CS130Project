@@ -1,5 +1,6 @@
-//still need to debug
-//i will start debugging as soon as I get home
+
+//still need to debug and fix
+
 import Foundation
 class Team {
     var uid:Int
