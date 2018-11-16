@@ -10,13 +10,12 @@ import UIKit
 
 class ENDSViewController: UIViewController {
     
-    var getname	 = "Default"
-    @IBOutlet weak var endName: UILabel!
+    var tenPressed = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Specific END Editing"
-        endName.text = "\(getname)"
     }
 
     override func didReceiveMemoryWarning() {
