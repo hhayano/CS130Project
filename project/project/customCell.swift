@@ -57,7 +57,7 @@ class customCell: UITableViewCell {
         
         endLabelView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         endLabelView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        endLabelView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        //endLabelView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         endLabelView.bottomAnchor.constraint(equalTo: self.scoreLabelView.topAnchor).isActive = true
         
         scoreLabelView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
