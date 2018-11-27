@@ -4,18 +4,10 @@ platform :ios, '9.0'
 target 'project' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-<<<<<<< HEAD
-
-  # Pods for project
-	
-  pod ‘Firebase/Core’
-  pod ‘Firebase/Database’
-=======
   
 
   # Pods for project
   pod 'Firebase/Core'
   pod 'Firebase/Database'
->>>>>>> refs/remotes/origin/feature-database
 
 end
