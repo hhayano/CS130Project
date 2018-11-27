@@ -15,11 +15,7 @@
   <key>CFBundlePackageType</key>
   <string>FMWK</string>
   <key>CFBundleShortVersionString</key>
-<<<<<<< HEAD:project/Pods/Target Support Files/GoogleToolboxForMac/Info.plist
-  <string>2.1.1</string>
-=======
   <string>5.3.5</string>
->>>>>>> refs/remotes/origin/feature-database:project/Pods/Target Support Files/GoogleUtilities/Info.plist
   <key>CFBundleSignature</key>
   <string>????</string>
   <key>CFBundleVersion</key>
